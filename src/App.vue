@@ -1,24 +1,24 @@
  <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <imglan></imglan>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import imglan from './components/imgLan.vue'
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      
+    }
   },
+  components: {
+    imglan,
+},
   created(){
-    this.getGoodList()
+
   },
   methods:{
-    async getGoodList(){
-      const {data:res} = await this.$http.get('/api/goods');
-      console.log(res)
-    }
+
   }
 }
 </script>
